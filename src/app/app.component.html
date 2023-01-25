@@ -3,6 +3,8 @@
   {{ news.title }}
   {{ news.content }}
 
+  <!-- Differentes maniere d'afficher -->
+  <!-- OU -->
   <app-news-item title="{{ news.title}}" content="{{ news.content }}" (smileyClick)="appendSmiley($event)"></app-news-item>
 </div>
 
