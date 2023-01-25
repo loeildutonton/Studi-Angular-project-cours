@@ -1,0 +1,8 @@
+<span *ngIf="isValid; else invalid">
+  OK
+</span>
+<ng-template #invalid>
+  <span>
+      La saisie est invalide
+  </span>
+</ng-template>

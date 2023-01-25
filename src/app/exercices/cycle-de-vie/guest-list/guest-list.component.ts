@@ -8,6 +8,9 @@ import { GuestService } from "../GuestService";
 })
 export class GuestListComponent implements OnInit {
   guestList: string[] | undefined;
+
+  // Comme on peut le remarquer dans cet exemple, le constructeur du composant permet d'injecter le service BookingService
+  // pour qu'il soit disponible depuis tout le composant.
   constructor(private guestService: GuestService) { }
 
   ngOnInit(): void {
