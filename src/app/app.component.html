@@ -1,3 +1,4 @@
+<!-- Inpuot / Output -->
 <h1>Angular Project</h1>
 <div *ngFor="let news of newsList">
   {{ news.title }}
@@ -8,3 +9,5 @@
   <app-news-item title="{{ news.title}}" content="{{ news.content }}" (smileyClick)="appendSmiley($event)"></app-news-item>
 </div>
 
+<!-- Cycle de vie -->
+<app-guest-list></app-guest-list>
